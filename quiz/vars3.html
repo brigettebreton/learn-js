@@ -2,14 +2,11 @@
     <head>
         <script>
             // Fix all errors in the code below
-            const PI = 3.14159;
-            // declared area here so we can access it outside of the block
-            let area;
+            let PI = 3.14159;
             {
                 let radius = 5;
                 area = PI * radius * radius;
-                // can't reassign a const variable
-                // PI = 3.0;
+                PI = 3.0;
             }
             console.log(area);
 
